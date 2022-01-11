@@ -1,0 +1,4 @@
+rootProject.name = 'siur-transformer'
+include 'core'
+include 'groovy-scripting'
+
