@@ -63,5 +63,10 @@ public class ZipTransformerFile implements TransformerFile {
             this.classReader = file.getReader();
             this.parsedNode = file.getNode();
         }
+
+        @Override
+        public String getName() {
+            return parsedNode.name;
+        }
     }
 }

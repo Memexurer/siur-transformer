@@ -7,6 +7,7 @@ group 'pl.memexurer.siur-transformer'
 version '1.0-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -19,7 +20,7 @@ publishing {
 }
 
 dependencies {
-    implementation 'org.ow2.asm:asm:9.0'
+    implementation 'org.ow2.asm:asm:9.5-SNAPSHOT'
     implementation 'org.ow2.asm:asm-tree:9.0'
     implementation 'org.projectlombok:lombok:1.18.20'
 

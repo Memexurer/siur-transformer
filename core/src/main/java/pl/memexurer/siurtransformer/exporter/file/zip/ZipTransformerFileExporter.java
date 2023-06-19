@@ -46,7 +46,7 @@ public class ZipTransformerFileExporter implements TransformerFileExporter {
             }
 
             for (TransformerFile.Class clazz : file.getClasses()) {
-                outputStream.putNextEntry(new ZipEntry(clazz.getName()));
+                outputStream.putNextEntry(new ZipEntry(clazz.getName() + ".class"));
                 outputStream.write(exporter.export(new ClassFile(clazz.getClassReader(), clazz.getParsedNode())));
                 outputStream.closeEntry();
             }
